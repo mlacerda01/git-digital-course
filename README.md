@@ -1,3 +1,3 @@
-# git-igital-course
+# git-digital-course
 
-#Versionamento com GIT
+# Versionamento com GIT
