@@ -1,0 +1,82 @@
+*{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color:#000;
+    font-size: 2rem;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+h1 p{
+    font-size: 5rem;
+}
+
+h1 p:nth-child(2){
+    color: mediumseagreen;
+}
+
+.page-content {
+    height: 100vh;
+    display: grid;  
+    gap: 5rem 0;
+}
+
+header{
+    margin-left: 5px;
+    grid-area: title;
+}
+
+aside{
+    margin-left: 5px;
+    grid-area: login;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.input-group{
+    margin-bottom: 1.5rem;
+}
+
+input[type='button'] {
+    color:#FFF;
+    background-color: mediumseagreen;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+}
+
+footer{
+    /* padding: 15px; */
+    text-align: auto;
+    background-color: mediumseagreen;
+    grid-area: footer;
+    
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    text-decoration: none;   
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+@media screen and (min-width: 1024px) {
+    .page-content{
+        gap: 2rem 0;
+        grid-template-areas: 
+        ". . . . ."
+        ". title title . ."
+        ". . login . ."
+        ". . . . ."
+        "footer footer footer footer footer"
+        ;
+    }
+}
+
+
